@@ -47,7 +47,7 @@ func main() {
 	pemFiles := flag.Args()
 
 	if len(pemFiles) == 0 {
-		fmt.Fprintf(os.Stderr, "Usage of %s:\n <options> pemfile1 <pemfile2>...", os.Args[0])
+		fmt.Fprintf(os.Stderr, "Usage of %s:\n <options> pemfile1 <pemfile2>\n", os.Args[0])
 		flag.PrintDefaults()
 		os.Exit(-1)
 	}
